@@ -1,10 +1,10 @@
 const axios = require("axios");
+//importamos axios para hacer las llamadas a la api de Paypal
 const querystring = require("querystring");
+//lo vamos a necesitar para pedir el token, no es necesario instalarlo
 
 class PaypalController {
-  constructor(paypalService) {
-    this.paypalService = paypalService;
-
+  constructor() {
     this.Paypal = {
       url: "https://api.sandbox.paypal.com",
       clientId: "",
